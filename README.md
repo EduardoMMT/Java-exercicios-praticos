@@ -1,18 +1,60 @@
 # Exercícios Base de Java
 
-Este repositório contém uma coleção de programas Java simples, criados como exercícios básicos para praticar a leitura de entrada do usuário, operações matemáticas e lógicas, e formatação de saída. Eles são ideais para quem está começando a aprender sobre **estrutura de programas**, **entrada e saída de dados** e **operadores** em Java.
+Este repositório contém uma coleção de programas Java simples, desenvolvidos como exercícios fundamentais para praticar a **entrada de dados**, **operações matemáticas** e **lógicas**, e a **formatação de saída**. Eles são ideais para quem está começando a aprender a linguagem Java.
 
 ---
 
-## 📁 Descrição dos Programas
+## 💻 Programas de Cálculo e Conversão
 
-| Arquivo | Descrição Detalhada | Conceitos-Chave |
-| :--- | :--- | :--- |
-| **`DiasDeIdade.java`** | O programa solicita que o usuário digite sua idade em anos e, em seguida, calcula e imprime essa idade convertida em dias (assumindo 365 dias por ano). Ele também utiliza uma estrutura condicional (`if/else`) simples para dar uma mensagem personalizada baseada na idade informada. | **`Scanner`**, **Entrada de `int`**, Operadores Aritméticos, **`if/else`** (Estrutura Condicional). |
-| **`EstoqueMedio.java`** | Este programa é usado para calcular o estoque médio de um produto, que é um cálculo comum em gestão de inventário. Ele solicita a quantidade mínima e a quantidade máxima de estoque e aplica a fórmula: $EstoqueMédio = (Mínimo + Máximo) / 2$. | **`Scanner`**, **Entrada de `int`**, Operadores Aritméticos. |
-| **`PrecoComDesconto.java`** | O programa calcula o preço final de um produto após a aplicação de um desconto percentual. O usuário insere o valor original do produto e a porcentagem de desconto. O resultado mostra o preço final com desconto e o **valor exato economizado** em reais, utilizando formatação de saída (`printf`) para garantir a precisão de duas casas decimais. | **`Scanner`**, **Entrada de `double`**, Cálculo de Percentual, **`printf`** (Formatação de Saída). |
-| **`RelacionamentosDeOrdem.java`** | Este exercício tem como foco os **Operadores Relacionais** em Java. Ele lê dois números inteiros e, para cada par, imprime o resultado (verdadeiro ou falso) de todas as comparações de ordem: igual (`==`), não igual (`!=`), maior (`>`), menor (`<`), maior ou igual (`>=`), e menor ou igual (`<=`). | **`Scanner`**, **Entrada de `int`**, **Operadores Relacionais** (`==`, `!=`, `>`, `<`, `>=`, `<=`). |
-| **`SaudacoesConsole.java`** | Um exercício que demonstra uma alternativa ao `Scanner` para leitura de entrada: a classe `java.io.Console`. O programa pede o nome do usuário e imprime uma saudação. É um ótimo exemplo para entender como buscar e utilizar classes menos comuns da documentação oficial do Java. | **`Console`**, **Leitura de `String`**. (Nota: O `Console` pode ter limitações de uso em alguns IDEs ou ambientes.) |
+Estes programas focam em receber dados do usuário e aplicar fórmulas matemáticas simples para resolver problemas comuns.
+
+### `MediaAritmetica.java`
+
+* **Descrição**: O programa calcula a média aritmética de três notas fornecidas pelo usuário.
+* **Foco**: Leitura de **números decimais (`double`)** usando `Scanner` e cálculo de média.
+* **Adicional**: O programa inclui uma estrutura condicional para verificar e informar se o aluno está **aprovado ou reprovado** (média $\geq 6$).
+
+### `EstoqueMedio.java`
+
+* **Descrição**: Determina o estoque médio ideal para um item, com base nas quantidades mínima e máxima estipuladas pelo usuário.
+* **Fórmula**: $EstoqueMédio = (QuantidadeMínima + QuantidadeMáxima) / 2$.
+* **Foco**: Entrada de **números inteiros (`int`)** e aplicação de operadores aritméticos.
+
+### `PrecoComDesconto.java`
+
+* **Descrição**: Calcula o preço final de um produto e o valor exato que o cliente economizou após a aplicação de um percentual de desconto.
+* **Foco**: Cálculo de percentual e o uso de **`printf`** para formatar a saída com precisão de duas casas decimais.
+
+### `ConversorDolarReal.java`
+
+* **Descrição**: Realiza a conversão de um valor em Dólar para Reais, solicitando tanto o valor a ser convertido quanto a cotação atual.
+* **Foco**: Leitura de múltiplos valores `double` e operadores de multiplicação para a conversão.
+
+---
+
+## ⏱️ Programas Lógicos e de Utilidade
+
+Estes exercícios exploram estruturas de controle de fluxo e diferentes métodos de interação com o usuário.
+
+### `DiasDeIdade.java`
+
+* **Descrição**: Converte a idade fornecida em anos para o número equivalente de dias (assumindo 365 dias por ano).
+* **Foco**: Operadores aritméticos e uso de uma **estrutura condicional (`if/else`)** para fornecer uma mensagem de feedback com base na idade.
+
+### `RelacionamentosDeOrdem.java`
+
+* **Descrição**: Demonstra o uso dos **Operadores Relacionais** em Java. O programa lê dois números e imprime o resultado booleano (`true` ou `false`) para todas as comparações possíveis (igual, não igual, maior, menor, etc.).
+* **Foco**: Operadores Relacionais (`==`, `!=`, `>`, `<`, `>=`, `<=`).
+
+### `Tabuada.java`
+
+* **Descrição**: Recebe um número inteiro e imprime a sua tabuada completa, dos fatores de 1 a 10.
+* **Foco**: Demonstra o uso de operações repetidas.
+
+### `SaudacoesConsole.java`
+
+* **Descrição**: Cria uma saudação personalizada, com o objetivo principal de demonstrar o uso da classe **`java.io.Console`** para leitura de entrada, como alternativa ao `Scanner`.
+* **Foco**: Uso da biblioteca `java.io` e exploração de diferentes métodos de entrada de dados, incentivando a consulta da documentação oficial.
 
 ## Como usar
 1. Abre o terminal na pasta dos arquivos.
@@ -22,4 +64,4 @@ Este repositório contém uma coleção de programas Java simples, criados como 
    java NomeDoArquivo
 4. Pronto.
 
-Precisa ter Java instalado, obviamente.
+Precisa ter Java instalado.
